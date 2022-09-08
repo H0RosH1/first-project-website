@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Ubuntu', sans-serif;
+}
+
+#profile {
+    background: #54546b;
+    background-size: cover ;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: auto ;
+}
+
+#profile>#fade{
+    background-color: rgba(61, 60, 60, 0.301);
+    width: 100%;
+    height: 100vh;
+    overflow: inherit ;
+}
+
+nav {
+    overflow: hidden;
+    font-size: 1.3em;
+    background-color: #353544;
+    border-bottom: 5px solid #222225;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 50px;
+}
+nav>ul>li{
+    float: left;
+}
+
+nav ul li a{
+    margin: 1.2em 1.5em;
+    padding: 10px;
+    color: white;
+    display: block;
+    min-width: 50px;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+nav .dorpdown-lab {
+    position: absolute;
+    margin-top: 0;
+    z-index: 3;
+    background-color: #2b2b35;
+    display: none;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: aqua;
+    /* border-bottom: 3px solid aqua; */
+    background-color: rgba(127, 255, 212, 0.555);
+    border-radius: 6px 6px;
+}
+
+nav .dorpdown:hover .dorpdown-lab {
+    display: block;
+}
+
+.lab-content {
+    position: absolute;
+    display: none;
+    left: 100%;/*ปรับตำแหน่ง*/
+    z-index: 4;/*ปรับลำดับชั้น*/
+    background-color: #292929;/*ปรับสีพื้นหลัง*/
+    margin-top: -67.8px; /*จัดความห่างภายนอก*/
+
+}
+nav .dorpdown-inlab:hover .lab-content{
+    display: block;/*ปรับรูปแบบการจัดเรียง*/
+}
+
+#logo {
+    margin-left:15px ;
+    padding-top: 15px;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    float: left;
+}
+
+#logo h1 {
+    color: aqua;
+    font-size: 24px;
+    font-family: 'Delius Unicase', cursive,Arial, Helvetica, sans-serif;
+}
+
+#logo p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Delius Unicase', cursive,Arial, Helvetica, sans-serif;
+}
+
+#logo #de {
+    height: 2px;
+    width: 77px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 5px 5px;
+    font-family: 'Delius Unicase', cursive,Arial, Helvetica, sans-serif;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#title{
+    font-size: 42px;
+    margin-left: 50px;
+    color: white;
+    color: aqua;
+    width: fit-content;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-bottom: 6px solid aqua;
+    border-radius: 6px 6px;
+    
+}
+
+
+#in{
+    padding: 20px ;
+}
+
+#in .no-in,#in p {
+    color: #9a9a9b;
+}
+
+#in .no-in:hover{
+    color: white;
+}
+
+#in a{
+    color: white;
+    font-size: 18px;
+}
+
+#img-lab ,.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#img-lab img{
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+    border: 2.5px solid turquoise;
+    border-radius: 6px;
+    background-color: #333333;
+}
+
+.content p {
+    color: white;
+    width: 900px;
+    padding: 25px 15px;
+    font-size: 24px;
+    background-color: #333333;
+    text-indent: 20px;
+    line-height: 30px;
+    border-radius: 6px;
+}
+
+.content p a {
+    color: white;
+}
+
+.content p .click {
+    color: rgb(6, 154, 240);
+}
+
+.content p .click:hover {
+    color: rgb(7, 62, 245);
+    transition: .3s;
+}
+
+.level {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    margin: 0 60px;
+}
+
+.level a {
+    color: white;
+    font-size: 24px;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 8%;
+    user-select: none;
+}
+
+.level a:hover {
+    color: aqua;
+    background-color: #353544;
+    border-color: unset ;
+    transition: .5s;
+}
+
+@media (max-width:1075px){
+    
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #303033;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        float: none;
+        border-top: 5px solid #222225;
+    }
+
+    .home .max-width {
+        margin: auto 0 0 30px;
+    }
+
+    nav>ul>li {
+        float: unset;
+    
+    }
+
+    .lab p a{
+        color: white;
+        font-size: 24px;
+    }
+    
+    nav ul li a {
+        font-size: 25px;
+        margin: 40px;
+        display: inline-block;
+    }
+
+    a:hover {
+        background: none;
+        color: aqua;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #img-lab img{
+        width: 700px;
+        height: 350px;
+        padding: 10px;
+        border: 2.5px solid turquoise;
+    }
+    .content p {
+        width: 700px;
+    }
+
+
+}
+@media (max-width:763px){
+
+    #title h2 {
+        font-size: 45px;
+    }
+
+    #profile>#fade{
+        background-color: rgba(61, 60, 60, 0.301);
+        width: 100%;
+        height: 100vh;
+    }
+    ul{
+        height: 100vh;
+    }
+    .lab p {
+        margin: 20px 20px 0;
+        text-align: center;
+    }
+    
+    .lab p a{
+        color: white;
+        font-size: 18px;
+    }
+
+    #fix{
+        display: block;
+    }
+    nav ul li a {
+        margin: 30px;
+    }
+
+    #profile {
+        width: 100%;
+        height: 100vh;
+    }
+ 
+    #profile>#fade{
+        background-color: rgba(61, 60, 60, 0.301);
+        width: 100%;
+        height: 100vh;
+    }
+    ul{
+        height: 100vh;
+    }
+
+    #title {
+        margin-left: 20px;
+    }
+
+    #img-lab img{
+        width: 85%;
+        height: unset;
+        min-height: 170px;
+        padding: 10px;
+        border: 2.5px solid turquoise;
+    }
+    .content p {
+        width: 85%;
+
+    }
+
+    #in .no-in,#in p ,#in p a{
+        font-size: 14px;
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+}

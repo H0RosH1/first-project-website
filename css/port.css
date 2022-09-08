@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Ubuntu', sans-serif;
+}
+
+
+
+#profile {
+    background: #54546b;
+    background-size: cover ;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: auto ;
+}
+
+#profile>#fade{
+    background-color: rgba(61, 60, 60, 0.301);
+    width: 100%;
+    height: 100vh;
+    overflow: inherit ;
+}
+
+nav {
+    overflow: hidden;
+    font-size: 1.3em;
+    background-color: #353544;
+    border-bottom: 5px solid #222225;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 50px;
+}
+nav>ul>li{
+    float: left;
+}
+
+nav ul li a{
+    margin: 1.2em 1.5em;
+    padding: 10px;
+    color: white;
+    display: block;
+    min-width: 50px;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+nav .dorpdown-lab {
+    position: absolute;
+    margin-top: 0;
+    z-index: 3;
+    background-color: #2b2b35;
+    display: none;
+}
+nav a:hover {
+    transition: 0.5s;
+    color: aqua;
+    /* border-bottom: 3px solid aqua; */
+    background-color: rgba(127, 255, 212, 0.555);
+    border-radius: 6px 6px;
+}
+
+nav .dorpdown:hover .dorpdown-lab {
+    display: block;
+}
+
+#logo {
+    margin-left:15px ;
+    padding-top: 15px;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    float: left;
+}
+
+#logo h1 {
+    color: aqua;
+    font-size: 24px;
+    font-family: 'Delius Unicase', cursive,Arial, Helvetica, sans-serif;
+}
+
+#logo p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Delius Unicase', cursive,Arial, Helvetica, sans-serif;
+}
+
+#logo #de {
+    height: 2px;
+    width: 77px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-radius: 5px 5px;
+    font-family: 'Delius Unicase', cursive,Arial, Helvetica, sans-serif;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#title{
+    font-size: 30px;
+    margin-left: 50px;
+    color: white;
+    color: aqua;
+    width: fit-content;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-bottom: 6px solid aqua;
+    border-radius: 6px 6px;
+    
+}
+
+#in{
+    padding: 20px ;
+}
+
+#in .no-in,#in p {
+    color: #9a9a9b;
+}
+
+#in .no-in:hover{
+    color: white;
+}
+
+#in a{
+    color: white;
+    font-size: 18px;
+}
+/*img lab setting*/
+#fix{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+}
+
+.lab p {
+    margin: 20px 20px 0;
+    margin-left: 300px;
+    min-width: 150px;
+}
+
+.lab p a{
+    color: white;
+    font-size: 32px;
+}
+
+.lab p a:hover {
+    color: aqua;
+    transition: 0.3s;
+}
+
+.home {
+    height: fit-content;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+
+}
+
+.left-name {
+    width: 25%;
+    background-color: #1f1f2c;
+    padding: 4em 1em 3.8em;
+
+}
+
+.left-name>img {
+    width: 50%;
+    height: 230px;
+    margin: 0 auto 30px;
+    display: block;
+    border: 3px solid white;
+    border-radius: 90% ;
+}
+
+.left-name>.name {
+    font-size: 24px;
+    color: white;
+    width: fit-content;
+    margin: 15px auto;
+    display: block;
+}
+
+.left-name>h3 {
+    font-size: 24px;
+    margin: 50px 0 20px;
+    margin-left: 10%;
+    color: white;
+}
+
+.left-name>p {
+    color: white;
+    font-size: 20px;
+    margin-left: 15%;
+}
+
+.piont {
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    background-color: #54546b;
+}
+
+.html ,.css ,.java ,.design {
+    background-color: white;
+    height: 10px;
+
+}
+.html {
+
+    width: 70%;
+}
+
+.css {
+
+    width: 45%;
+}
+
+.java {
+    width: 35%;
+}
+
+.design {
+    width: 55%;
+}
+
+.right {
+    width: 75%;
+
+}
+
+.right>img {
+    width: 50%;
+}
+
+.why {
+    margin-bottom: 150px;
+}
+
+.why>h3 {
+    color: white;
+    font-size: 32px;
+    margin: 50px auto;
+    width: fit-content;
+}
+.why>p {
+    color: white;
+    font-size: 24px;
+    line-height: 35px;
+    width: 75%;
+    text-indent: 65px;
+    margin: 0 auto;
+}
+
+@media (max-width:1075px){
+    
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #303033;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        float: none;
+        border-top: 5px solid #222225;
+    }
+
+    nav>ul>li {
+        float: unset;
+    
+    }
+
+    .lab p a{
+        color: white;
+        font-size: 32px;
+    }
+    
+    nav ul li a {
+        font-size: 25px;
+        margin: 40px;
+        display: inline-block;
+    }
+
+    a:hover {
+        background: none;
+        color: aqua;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #img-lab img {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+    }
+
+    .left-name>img {
+        width: 50%;
+        height: 130px;
+        margin: 0 auto 30px;
+        display: block;
+        border: 3px solid white;
+        border-radius: 90% ;
+    }
+
+}
+@media (max-width:763px){
+
+    #title h1 {
+        font-size: 45px;
+    }
+
+    #profile>#fade{
+        background-color: rgba(61, 60, 60, 0.301);
+        width: 100%;
+        height: 100vh;
+    }
+    ul{
+        height: 100vh;
+    }
+    .lab p {
+        margin: 20px 20px 0;
+        text-align: center;
+    }
+    
+    .lab p a{
+        color: white;
+        font-size: 20px;
+    }
+
+    #fix{
+        display: block;
+    }
+    nav ul li a {
+        margin: 30px;
+    }
+
+    #profile {
+        width: 100%;
+        height: 100vh;
+    }
+ 
+    #profile>#fade{
+        background-color: rgba(61, 60, 60, 0.301);
+        width: 100%;
+        height: 100vh;
+    }
+    ul{
+        height: 100vh;
+    }
+    #in .no-in,#in p ,#in p a{
+        font-size: 14px;
+    }
+
+    #title {
+        margin-left: 20px;
+    }
+
+    .content{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .left-name {
+        width: 100%;
+        padding-left: 0;
+        padding-left: 0;
+    }
+
+    .left-name .name {
+        font-size: 24px;
+    }
+
+    .left-name>h3 {
+        margin-left: 5%;
+    }
+    .left-name>p {
+        margin-left: 7%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left-name>img {
+        width: 50%;
+        height: 230px;
+        margin: 0 auto 30px;
+        display: block;
+        border: 3px solid white;
+        border-radius: 90% ;
+    }
+
+    .why>h3 {
+        font-size: 24px;
+    }
+
+    .why>p {
+        text-indent: 25px;
+        font-size: 18px;
+        width: 80%;
+    }
+}
+
+@media (max-width:375px){
+    .left-name>img {
+        width: 75%;
+        height: 250px;
+    }
+    .left-name .name {
+        font-size: 22px;
+    }
+}
